@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domate2</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">FootUpFund<span>.</span></a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#socials">Socials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+    </header>
+
+    <section class="home" id="home">
+        <div class="contents">
+            <h3>Giving is the Art Of grace</h3>
+            <p>Join us in this satisfying experience of donating to those in need. Alone we can do so little together we can do so much!</p>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="title">
+            <h1 class="heading">About</h1>
+            <div class="underline"></div>
+            <p>The meaning of life is to find your gift. The purpose of life is to give it away!</p>
+        </div>
+
+        <div class="about-center section-center">
+            <article class="about-img">
+                <img src="image/img7.jpg">
+            </article>
+            <article class="about1">
+                <div class="btn-container">
+                    <button class="tab-btn active" data-id="history">history</button>
+                    <button class="tab-btn" data-id="vision">vision</button>
+                    <button class="tab-btn" data-id="goals">goals</button>
+                </div>
+                <div class="about-content">
+                    <div class="content active" id="history">
+                        <h4>History</h4>
+                        <p>Charity has been part of human culture for thousands of years. There are numerous instances of charitable acts in ancient civilizations.In today’s world there are hundreds of thousands of non-profit organizations (NPOs) established at the local, regional, national and international level, and their influence is increasing. Non-profit organizations even considered the third sector of the economy (the first two is the public and private, or commercial). It is believed that they have a special role in development of civil society.</p>
+                    </div>
+
+                    <div class="content" id="vision">
+                        <h4>Vision</h4>
+                        <p>Charity begins at home it is a true saying as someone that cannot love her/his family then how can that person love someone else. This proverb is a lesson for all of us and Charity does and should begin at home. First, we need to learn to care and love our family wholeheartedly then we can shower love to the outside world.A child learns by seeing his elders, if the parents are loving and giving and pay importance to social cause them their children will also learn the same and make some efforts to improve the society.</p>
+                    </div>
+
+                    <div class="content" id="goals">
+                        <h4>Goals</h4>
+                        <p>We, at FootUpFund aim to relieving poverty, education, religion, protecting the environment, animal welfare, human rights and community development.We believe that together we alongwith the citizens of our nation, can build a stronger and better future for everyone around us </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="section donate" id="donate">
+        <div class="title">
+            <h1 class="heading">Donate</h1>
+            <div class="underline"></div>
+        </div>
+
+        <div class="about-center section-center">
+            <article class="about-img">
+                <img src="image/img3.avif">
+            </article>
+            <div class="about-content">
+                <h4>Make Your Contributions here</h4>
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LQ8uBNZMzptOYZ" async> </script> </form>
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+    <section class="socials" id="socials">
+        <h1 class="heading">Socials</h1>
+        <div class="underline"></div>
+        <div class="content1">
+        
+            <div class="media-info">
+               <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+               <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+               <li><a href="#"><i class="fab fa-youtube"></i>YouTube</a></li>
+               <li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+            </div>
+       <div class="container2">
+        <img src="image/link2.avif" alt="">
+       </div>
+       </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact <span> Us</span></h1>
+        <div class="underline"></div>
+        <div class="row1">
+            <form action="">
+                <input type="text" placeholder="Name" class="box">
+                <br>
+                <input type="email" placeholder="Email" class="box">
+                <br>
+                <input type="number" placeholder="Number" class="box">
+                <br>
+                <textarea name="" class="box" placeholder="Message" id="" cols="20" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            <div class="imagge">
+                <img src="image/img6.jpg">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay:300 
+        });
+        ScrollReveal().reveal('.contents h3', { delay: 500,origin:'left' });
+        ScrollReveal().reveal('.contents p', { delay: 500,origin:'bottom' });
+        ScrollReveal().reveal('.about-img', { delay: 500,origin:'left' });
+        ScrollReveal().reveal('.container img', { delay: 500,origin:'top' });
+        ScrollReveal().reveal('.reason', { delay: 500,origin:'left' });
+        ScrollReveal().reveal('.container2', { delay: 500,origin:'right' });
+        ScrollReveal().reveal('.media-info', { delay: 500,origin:'left' });
+        ScrollReveal().reveal('.underline', { delay: 500,origin:'left' });
+        ScrollReveal().reveal('.imagge', { delay: 500,origin:'bottom' });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
